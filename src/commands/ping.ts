@@ -26,16 +26,16 @@ export class PingCommand extends Command {
     const apiLatency = Math.round(this.container.client.ws.ping);
     
     const embed = new EmbedBuilder(universalEmbed)
-      .setDescription(`My latency is ${latency}ms `)
+      .setDescription(`<:arduinostill:919725940819505163> My latency is ${latency}ms `)
       .addFields([
 
         { 
-          name: 'API Latency', 
+          name: '<:a_cloud:748544799291998298> API Latency', 
           value: `${apiLatency}ms`, 
           inline: true 
         },
         { 
-          name: 'Uptime', 
+          name: '<:clips:748544799266832425> Uptime', 
           value: this.formatUptime(process.uptime()),
           inline: false 
         }
